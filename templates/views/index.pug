@@ -14,32 +14,32 @@ block content
 				img.slide-1(src='/images/slider/1.jpg', alt='First slide')
 				.container
 					.carousel-caption
-						a.btn.btn-lg.btn-default(href='#', style="border: 1px solid #6EC91E;") Learn More &gt;&gt;
+						//a.btn.btn-lg.btn-default(href='#', style="border: 1px solid #6EC91E;") Learn More &gt;&gt;
 			.item
 				img.slide-2(src='/images/slider/2.jpg', alt='Second slide')
 				.container
 					.carousel-caption
-						a.btn.btn-lg.btn-default(href='#', style="border: 1px solid #6EC91E;") Learn More &gt;&gt;
+						//a.btn.btn-lg.btn-default(href='#', style="border: 1px solid #6EC91E;") Learn More &gt;&gt;
 			.item
 				img.slide-3(src='/images/slider/3.jpg', alt='Third slide')
 				.container
 					.carousel-caption
-						a.btn.btn-lg.btn-default(href='#', style="border: 1px solid #6EC91E;") Learn More &gt;&gt;
+						//a.btn.btn-lg.btn-default(href='#', style="border: 1px solid #6EC91E;") Learn More &gt;&gt;
 			.item
 				img.slide-4(src='/images/slider/4.jpg', alt='Fourth slide')
 				.container
 					.carousel-caption
-						a.btn.btn-lg.btn-default(href='#', style="border: 1px solid #6EC91E;") Learn More &gt;&gt;
+						//a.btn.btn-lg.btn-default(href='#', style="border: 1px solid #6EC91E;") Learn More &gt;&gt;
 			.item
 				img.slide-5(src='/images/slider/5.jpg', alt='Fifth slide')
 				.container
 					.carousel-caption
-						a.btn.btn-lg.btn-default(href='#', style="border: 1px solid #6EC91E;") Learn More &gt;&gt;
+						//a.btn.btn-lg.btn-default(href='#', style="border: 1px solid #6EC91E;") Learn More &gt;&gt;
 			.item
 				img.slide-6(src='/images/slider/6.jpg', alt='Sixth slide')
 				.container
 					.carousel-caption
-						a.btn.btn-lg.btn-default(href='#', style="border: 1px solid #6EC91E;") Learn More &gt;&gt;
+						//a.btn.btn-lg.btn-default(href='#', style="border: 1px solid #6EC91E;") Learn More &gt;&gt;
 		a.left.carousel-control(href='#!/#airotek_carousel', role='button', data-slide='prev')
 			span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
 			span.sr-only Previous
@@ -48,7 +48,60 @@ block content
 			span.sr-only Next
 			//end of carousel
 
-	.row(style='margin:25px;')
+	h2(style="text-align:center") Affiliates
+	#partners_carousel.carousel.slide
+		.carousel-inner
+			.item.partner-item.active
+				.col-lg-4.col-xs-4.col-md-4.col-sm-4
+					a(href="http://www.mitsubishielectric.com/", target="_blank")
+						img.img-responsive(src="images/partners/mitsubishielectric.png")
+						//| 1
+			.item.partner-item
+				.col-lg-4.col-xs-4.col-md-4.col-sm-4
+					a(href="http://www.petra-eng.com/", target="_blank")
+						img.img-responsive(src="images/partners/petra.png")
+						//| 2
+			.item.partner-item
+				.col-lg-4.col-xs-4.col-md-4.col-sm-4
+					a(href="http://www.johnsoncontrols.com/", target="_blank")
+						img.img-responsive(src="images/partners/johnsons.jpg")
+						//| 3
+			.item.partner-item
+				.col-lg-4.col-xs-4.col-md-4.col-sm-4
+					a(href="http://www.unionaire.com/index.php/en/", target="_blank")
+						img.img-responsive(src="images/partners/unionaire.png")
+						//| 4
+			.item.partner-item
+				.col-lg-4.col-xs-4.col-md-4.col-sm-4
+					a(href="http://www.wintair.co.za/", target="_blank")
+						img.img-responsive(src="images/partners/wintair.png")
+						//| 5
+			.item.partner-item
+				.col-lg-4.col-xs-4.col-md-4.col-sm-4
+					a(href="http://www.lg.com/za", target="_blank")
+						img.img-responsive(src="images/partners/lg.jpg")
+						//| 6
+			.item.partner-item
+				.col-lg-4.col-xs-4.col-md-4.col-sm-4
+					a(href="http://www.carrier.co.za/", target="_blank")
+						img.img-responsive(src="images/partners/carrier.png")
+						//| 7
+			.item.partner-item
+				.col-lg-4.col-xs-4.col-md-4.col-sm-4
+					a(href="http://www.york.com/", target="_blank")
+						img.img-responsive(src="images/partners/york.jpg")
+						//| 8
+			.item.partner-item
+				.col-lg-4.col-xs-4.col-md-4.col-sm-4
+					a(href="http://gree.co.za/", target="_blank")
+						img.img-responsive(src="images/partners/gree.png")
+						//| 9
+		a.left.carousel-control(href="#partners_carousel", data-slide="prev")
+			i.glyphicon.glyphicon-chevron-left
+		a.right.carousel-control(href="#partners_carousel", data-slide="next")
+			i.glyphicon.glyphicon-chevron-right
+
+	.row(style='margin-left:25px;margin-right:25px;')
 		.col-xs-12.col-sm-6.col-md-6.col-lg-4
 			img(src='/images/supply.jpg', style='width:300px;height:165px;margin-top:10px;display:block;margin:auto;border-radius:15px;border: 1px solid #343434;', alt='INTRUSION SYSTEMS')
 			h3(style='text-align:center') SUPPLY
@@ -58,3 +111,6 @@ block content
 		.col-xs-12.col-sm-6.col-md-6.col-lg-4
 			img(src='/images/maintain.jpg', style='width:320px;height:165px;margin-top:10px;display:block;margin:auto;border-radius:15px;border: 1px solid #343434;', alt='FIRE DETECTION / SUPPRESSION')
 			h3(style='text-align:center') MAINTAIN
+
+block js
+	script(src="js/multi-slider.js")

@@ -103,14 +103,14 @@ body
 	border-radius:10px;
 }
 
-.active
+.nav .active
 {
 	border-top: 3px solid @system-accent-colour;
 	background-color: #353535;
 	border-bottom: 3px solid @system-accent-colour;
 }
 
-.active a
+.nav .active a
 {
 	color:#6EC91E;
 }
@@ -121,6 +121,8 @@ body
 	margin-top:50px;
 	height: 400px;
 	z-index: 0;
+	background-color: #353535;
+	border-bottom: 2px solid @system-accent-colour;
 }
 
 #airotek_carousel .carousel-inner > .item > img
@@ -129,7 +131,40 @@ body
 	height: 400px;
 }
 
-.carousel-control {
+//
+#partners_carousel
+{
+	width:70%;
+	margin-top:50px;
+	height: 150px;
+	z-index: 0;
+	margin-left:auto;
+	margin-right:auto;
+	border: none;
+}
+
+#partners_carousel .carousel-inner{
+	border: none;
+}
+
+#partners_carousel .carousel-inner > .item > img
+{
+	margin: 0 auto;
+	height: 150px;
+	border: none;
+	width:200px;
+}
+
+#partners_carousel .carousel-inner .active.left { left: -33%; }
+#partners_carousel .carousel-inner .next        { left:  33%; }
+#partners_carousel .carousel-inner .prev        { left: -33%; }
+#partners_carousel .carousel-control.left,.carousel-control.right {background-image:none;}
+#partners_carousel .item:not(.prev) {visibility: visible;}
+#partners_carousel .item.right:not(.prev) {visibility: hidden;}
+#partners_carousel .rightest{ visibility: visible;}
+
+.carousel-control
+{
   padding-top:10%;
   width:5%;
 }
@@ -152,7 +187,7 @@ body
 {
   width:@social-link-size;
   height:@social-link-size;
-	background-repeat:no-repeat;
+  background-repeat:no-repeat;
 }
 
 #lnk_face
@@ -351,8 +386,8 @@ body
 	{
 		height: 160px;
 		margin-top:60px;
-	  background-color: #343434;
-	  z-index: 0;
+		background-color: #343434;
+		z-index: 0;
 	}
   
 	#airotek_carousel .carousel-inner > .item > img
